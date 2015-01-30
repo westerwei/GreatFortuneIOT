@@ -1,0 +1,43 @@
+
+    <!-- Optional theme -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.0/css/bootstrap-theme.min.css">
+    <div class="container" >
+        <div class="row">
+            <div class="col-md-4 col-md-offset-4">
+                <div class="login-panel panel panel-default">
+                    <div class="panel-heading">
+                        <h3 class="panel-title">Please Sign In</h3>
+                    </div>
+                    <div class="panel-body">
+                        <form role="form" ng-submit="Login()">
+                            <fieldset>
+                                <div class="form-group">
+                                    <input class="form-control" placeholder="User ID" name="userID" autofocus 
+                                    	ng-disabled="uidisable" ng-model="userid" ng-focus="recoverUI()" >
+                                </div>
+                                <div class="form-group">
+                                    <input class="form-control" placeholder="Password" name="password" type="password" value="" 
+                                    	ng-disabled="uidisable" ng-model="password" ng-focus="recoverUI()" >
+                                </div>
+                                <div class="checkbox">
+                                    <label>
+                                        <input name="remember" type="checkbox" value="Remember Me" ng-disabled="uidisable"><a href="/dashboard">Remember Me</a>
+                                    </label>
+                                </div>
+                                <!-- Change this to a button or input when using this as a form -->
+                                <div class="form-group">
+                                	<a href="" class="btn btn-lg btn-success btn-block" ng-click="Login()" ng-disabled="uidisable">Login</a>
+                                	<button style="display: none;" type="submit"></button>
+                                </div>
+                                <div ng-class="msgStyle" id="msgBox" role="alert" style="display: none;">
+        							<strong>Response Message:</strong> {{'{{'}}displayMessage{{'}}'}}.
+      							</div>
+                            </fieldset>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+

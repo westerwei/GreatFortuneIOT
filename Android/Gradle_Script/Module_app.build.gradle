@@ -1,0 +1,38 @@
+apply plugin: 'com.android.application'
+
+android {
+    compileSdkVersion 19
+    buildToolsVersion "21.1.0"
+
+    defaultConfig {
+        applicationId "com.example.wester.myapplication"
+        minSdkVersion 19
+        targetSdkVersion 21
+        versionCode 1
+        versionName "1.0"
+
+    }
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+
+
+}
+
+dependencies {
+    compile fileTree(include: ['*.*'], dir: 'libs')
+    compile 'com.squareup.retrofit:retrofit:1.7.1'
+//    compile 'com.squareup.okhttp:okhttp-urlconnection:2.0.0'
+//    compile 'com.squareup.okhttp:okhttp:2.0.0'
+    compile 'com.google.android.gms:play-services:6.1.+'
+    compile 'com.android.support:support-v4:21.0.+'
+    compile 'org.java-websocket:Java-WebSocket:1.3.0'
+    compile group: 'org.bytedeco', name: 'javacv', version: '0.9'
+//    compile 'com.googlecode.javacpp:javacpp:0.7'
+//    compile group: 'org.bytedeco.javacpp-presets', name: 'ffmpeg', version: '2.3-0.9', classifier: 'android-arm'
+    compile 'org.eclipse.paho:org.eclipse.paho.client.mqttv3:1.0.1'
+    compile project(':libraries:opencv')
+}

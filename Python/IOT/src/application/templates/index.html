@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="IOT Cloud Platform">
+    <meta name="author" content="Wester">
+
+    <title>Great-Fortune IOT Cloud Platform</title>
+
+    <!-- Bootstrap Core CSS -->
+    <link href="{{ url_for('static', filename='css/bootstrap.min.css') }}" rel="stylesheet">
+
+    <!-- MetisMenu CSS -->
+    <link href="{{ url_for('static', filename='css/metisMenu.min.css') }}" rel="stylesheet">
+
+    <!-- Timeline CSS -->
+    <link href="{{ url_for('static', filename='css/timeline.css') }}" rel="stylesheet">
+
+    <!-- Custom CSS -->
+    <link href="{{ url_for('static', filename='css/sb-admin-2.css') }}" rel="stylesheet">
+
+    <!-- Morris Charts CSS -->
+    <link href="{{ url_for('static', filename='css/morris.css') }}" rel="stylesheet">
+	
+    <!-- Custom Fonts -->
+    <link href="{{ url_for('static', filename='css/font-awesome.min.css') }}" rel="stylesheet" type="text/css">
+    
+    <link href="{{ url_for('static', filename='css/iotapp.css') }}" rel="stylesheet" type="text/css">
+
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+	<style type="text/css">
+	@import url(//fonts.googleapis.com/css?family=Yanone+Kaffeesatz:400,700);
+	@import url('{{ url_for('static', filename='cubism.css') }}');
+			
+	#series { min-height: 155px; }
+	
+	.panel-yellow-text {
+    	color: #f0ad4e;
+	}
+	
+	.panel-primary-text {
+    	color: #337ab7;
+	}
+	
+	.panel-green-text {
+    	color: #5cb85c;
+	}
+	
+	.panel-huge-text {
+		font-size: 60px;
+	}
+	</style>
+	
+	<!-- jQuery -->
+    <script type="text/javascript" src="{{ url_for('static', filename='jquery-2.1.1.js') }}"></script>
+
+    <!-- Bootstrap Core JavaScript -->
+    <script type="text/javascript" src="{{ url_for('static', filename='js/bootstrap.min.js') }}"></script>
+
+    <!-- Metis Menu Plugin JavaScript -->
+    <script type="text/javascript" src="{{ url_for('static', filename='js/metisMenu.min.js') }}"></script>
+
+    <!-- Morris Charts JavaScript -->
+    <!--  
+    <script type="text/javascript" src="{{ url_for('static', filename='js/raphael-min.js') }}"></script>
+    <script type="text/javascript" src="{{ url_for('static', filename='js/morris.min.js') }}"></script>
+    <script type="text/javascript" src="{{ url_for('static', filename='js/morris-data.js') }}"></script>
+    -->
+    <!-- Custom Theme JavaScript -->
+    <script type="text/javascript" src="{{ url_for('static', filename='js/sb-admin-2.js') }}"></script>
+    
+    <script src="http://d3js.org/d3.v3.js" charset="utf-8"></script>
+	<script type="text/javascript" src="{{ url_for('static', filename='gauge.js') }}"></script>
+	<script type="text/javascript" src="{{ url_for('static', filename='mqttws31.js') }}"></script>
+	
+	<script type="text/javascript" src="{{ url_for('static', filename='cubism.v1.js') }}"></script>
+	<script type="text/javascript" src="{{ url_for('static', filename='highlight.min.js') }}"></script>
+	
+	
+	<!-- Enable AngularJS -->
+    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/angularjs/1.3.9/angular.min.js"></script>
+    <script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.3.9/angular-animate.js"></script>
+    <script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.3.9/angular-route.js"></script>
+    
+    <!-- AnularJS controller -->
+    <script type="text/javascript" src="{{ url_for('static', filename='js/IOTApp.js') }}"></script>
+    <!--  
+    <script type="text/javascript" src="{{ url_for('static', filename='js/dashboard.js') }}"></script>
+    -->
+    <!--  
+    <base href="/">
+	-->
+	
+	<script type="text/javascript" src="{{ url_for('static', filename='js/appconstants.js') }}"></script>
+	
+</head>
+<body ng-app="IOTApp">
+
+	<!-- inject our views using ng-view -->
+    <!-- each angular controller applies a different class here -->
+    <div class="page {{'{{'}} pageClass {{'}}'}}" ng-view></div>
+    
+</body>
+</html>

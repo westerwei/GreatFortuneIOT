@@ -1,0 +1,231 @@
+/*html {
+  min-width: 1040px;
+}
+
+body {
+  font-family: "Helvetica Neue", Helvetica, sans-serif;
+  margin: auto;
+  margin-top: 40px;
+  margin-bottom: 4em;
+  width: 960px;
+}
+
+#body {
+  position: relative;
+}
+*/
+
+#body {
+  font-family: "Helvetica Neue", Helvetica, sans-serif;
+  margin: auto;
+  margin-top: 40px;
+  margin-bottom: 4em;
+  width: 1024px;
+  position: relative;
+}
+
+#body footer {
+  font-size: small;
+  margin-top: 8em;
+}
+
+#body aside {
+  font-size: small;
+  left: 780px;
+  position: absolute;
+  width: 180px;
+}
+
+#body > p, #body li > p {
+  line-height: 1.5em;
+}
+
+#body > p {
+  width: 720px;
+}
+
+#body > blockquote {
+  width: 640px;
+}
+
+#body li {
+  width: 680px;
+}
+
+#body a {
+  color: steelblue;
+}
+
+#body a:not(:hover) {
+  text-decoration: none;
+}
+
+#body pre, #body code, #body textarea {
+  font-family: "Menlo", monospace;
+}
+
+#body code {
+  line-height: 1em;
+}
+
+#body textarea {
+  font-size: 100%;
+}
+
+#body > pre {
+  border-left: solid 2px #ccc;
+  padding-left: 18px;
+  margin: 2em 0 2em -20px;
+}
+
+#body .html .value,
+#body .javascript .string,
+#body .javascript .regexp {
+  color: #756bb1;
+}
+
+#body .html .tag,
+#body .css .tag,
+#body .javascript .keyword {
+  color: #3182bd;
+}
+
+#body .comment {
+  color: #636363;
+}
+
+#body .html .doctype,
+#body .javascript .number {
+  color: #31a354;
+}
+
+#body .html .attribute,
+#body .css .attribute,
+#body .javascript .class,
+#body .javascript .special {
+  color: #e6550d;
+}
+
+#body svg {
+  font: 10px sans-serif;
+}
+
+#body .axis path, #body .axis line {
+  fill: none;
+  stroke: #000;
+  shape-rendering: crispEdges;
+}
+
+#body sup, #body sub {
+  line-height: 0;
+}
+
+#body q:before,
+#body blockquote:before {
+  content: "“";
+}
+
+#body q:after,
+#body blockquote:after {
+  content: "”";
+}
+
+#body blockquote:before {
+  position: absolute;
+  left: 2em;
+}
+
+#body blockquote:after {
+  position: absolute;
+}
+
+#body h1 {
+  font-size: 96px;
+  margin-top: .3em;
+  margin-bottom: 0;
+}
+
+#body h1+h2 {
+  margin-top: 0;
+}
+
+#body h2 {
+  font-weight: 400;
+  font-size: 28px;
+}
+
+#body h1, #body h2 {
+  font-family: "Yanone Kaffeesatz";
+  text-rendering: optimizeLegibility;
+}
+
+#body #logo {
+  width: 122px;
+  height: 31px;
+}
+
+#body #fork {
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+
+#body .axis {
+  font: 10px sans-serif;
+}
+
+#body .axis text {
+  -webkit-transition: fill-opacity 250ms linear;
+}
+
+#body .axis path {
+  display: none;
+}
+
+#body .axis line {
+  stroke: #000;
+  shape-rendering: crispEdges;
+}
+
+#body .horizon {
+  border-bottom: solid 1px #000;
+  overflow: hidden;
+  position: relative;
+}
+
+#body .horizon {
+  border-top: solid 1px #000;
+  border-bottom: solid 1px #000;
+}
+
+#body .horizon + #body .horizon {
+  border-top: none;
+}
+
+#body .horizon canvas {
+  display: block;
+}
+
+#body .horizon .title,
+#body .horizon .value {
+  bottom: 0;
+  line-height: 30px;
+  margin: 0 6px;
+  position: absolute;
+  text-shadow: 0 1px 0 rgba(255,255,255,.5);
+  white-space: nowrap;
+}
+
+#body .horizon .title {
+  left: 0;
+}
+
+#body .horizon .value {
+  right: 0;
+}
+
+#body .line {
+  background: #000;
+  opacity: .2;
+  z-index: 2;
+}
